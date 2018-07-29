@@ -20,7 +20,7 @@ public class UserRepositoryImpl implements UserRepository{
 	
 	public UserRepositoryImpl(RedisTemplate<String, User> redisTemplate) {
 		this.redisTemplate = redisTemplate;
-		hashOperations = redisTemplate.opsForHash(); // HashOperations to opertate on redis
+		hashOperations = redisTemplate.opsForHash(); // HashOperations to Operate on redis
 	}
 
 	public void save(User user) {
